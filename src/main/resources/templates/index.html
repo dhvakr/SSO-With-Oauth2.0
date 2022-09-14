@@ -1,0 +1,133 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Login Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script type="text/javascript" src="/js/index.js"></script>
+
+    <style>
+        body{
+        margin:0;
+        padding:0;
+        background-image:url("images/bg1.png");
+        background-repeat:no-repeat;
+        background-size:cover;
+        }
+        .container{
+        top:50%;
+        left:50%;
+        position:absolute;
+        transform:translate(-50%,-50%);
+        }
+        .card
+        {
+        padding:32px 40px 50px 40px;
+        background:#DDE5B6;
+        border-radius:37px;
+        opacity:0.9;
+        }
+        .name
+        {
+        border:none;
+        background:transparent;
+        border-bottom:1px solid white;
+        padding:6px;
+        margin-bottom:20px;
+        outline:none;
+        width:380px;
+        color:black;
+        }
+        .login
+        {
+        border-radius:20px;
+        padding:15px 20px;
+        background:black;
+        color:white;
+        margin-top:20px;
+        border:none;
+        outline:none;
+        margin-left:150px;
+        font-size:15px;
+        }
+        .login2
+        {
+        border-radius:24px;
+        padding:19px 24px;
+        background:black;
+        color:white;
+        margin-top:20px;
+        border:none;
+        outline:none;
+        margin-right:150px;
+        font-size:15px;
+        }
+        #login:hover
+        {
+        background-color:#FF6978;
+        color:white;
+        cursor:pointer;
+        }
+        h1
+        {
+        color:black;
+        font-family: 'Orelega One', cursive;
+        }
+        a
+        {
+        font-size:15px;
+        color:black;
+        }
+        img
+        {
+        border-radius:50%;
+        position:absolute;
+        margin-left:220px;
+        margin-top:-40px;
+        z-index:1;
+        }
+        .alert
+        {
+        width:500px;
+        margin-left:0px;
+        color:red;
+        font-size:18px;
+        background-color:#F8F7FF;
+        text-align:center;
+        padding:20px;
+        border-radius:20px;
+        }
+        .fas
+        {
+        color:black;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <br>
+    <br>
+    <br>
+    <div class="card">
+        <h1></h1>
+        <h2>login to continue</h2>
+        <div class="d-flex align-items-center justify-content-between">
+            <a href="/oauth2/authorization/google">Google</a>
+            <a href="/oauth2/authorization/auth0">OAuth</a>
+            <a href="https://myapp.dev-18.qlikverify.com/auth/realms/myapp/protocol/openid-connect/auth">QlikVerify</a>
+        </div>
+    </div>
+</div>
+<style>
+    a {
+        background: black;
+        color: white;
+        border: 1px solid white;
+        padding: 10px 15px;
+        border-radius: 10px;
+    }
+</style>
+</body>
+</html>

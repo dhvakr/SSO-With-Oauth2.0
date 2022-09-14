@@ -1,0 +1,19 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: <Your Google Client ID>
+            client-secret: <Your Google Client Secret key>
+          auth0:
+            client-id: <Your Auth0 Client ID>
+            client-secret: <Your Auth0 Client Secret key>
+            scope:
+              - openid
+              - profile
+              - email
+        provider:
+          auth0:
+                # trailing slash is important!
+              issuer-uri: https://dev-pqylv2yt.us.auth0.com/
